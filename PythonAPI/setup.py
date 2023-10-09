@@ -7,7 +7,7 @@ import numpy as np
 ext_modules = [
     Extension(
         'halpecocotools._mask',
-        sources=['common/maskApi.c', 'halpecocotools/_mask.pyx'],
+        sources=['common/maskApi.c'],
         include_dirs = [np.get_include(), 'common'],
         extra_compile_args=[],
     )
